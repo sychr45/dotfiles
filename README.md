@@ -1,6 +1,6 @@
 <div align="center">
 
-## Hyprland Setup by 43pr メ
+## 43PR Hyprland Setup fork
 
 A fork from https://github.com/43PR/dotfiles using an older GUI version, different keybinds, AMD GPU support, a taskbar integrated into the waybar, more nerd fonts, and no media array on the waybar taking up 1/4 of the screen, and some other stuff probably
 
