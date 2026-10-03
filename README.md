@@ -16,7 +16,7 @@ Wallpapers: https://wallhaven.cc/user/43pr
 
 ## Features
 
-- **Waybar** — Volume control, mute, and media playback controls.
+- **Waybar** — Volume control, mute, network, battery and power.
 - **Settings Menu** — System, network, bluetooth, display, audio, storage, and more.
 - **Dynamic Colors** — Wallpaper-based color generation with **Matugen**.
 - **Preset Themes** — Default Monochrome, Nord, Tokyo Night, etc. (you can create your own too)
@@ -58,7 +58,7 @@ Just made some tweaks to it. Give it some love: [hyprquickpaper](https://github.
 | `Super + Tab`           | Lock screen               |
 | `Super + Grave`         | Logout menu               |
 | `Super + Mouse wheel`   | Zoom in/out               |
-| `Delete`                | Screenshot fullscreen     |
+| `Delete`                | Screenshot fullscreen     | <- saves to ~/Pictures/ usually (might find out a way for it to copy and paste rather than save each time)
 | `SHIFT + Delete`        | Screenshot area select    |
 | `Super + L`             | Screen lock               |
 
@@ -80,7 +80,7 @@ This is mainly intended for a clean installation (existing configuration files t
 **First install git then use the next command and continue the installation until it's finished**
 
 ```bash
-sudo pacman -S git   
+sudo pacman -S git base-devel
 ```
 
 ```bash
@@ -90,7 +90,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-After the installation finishes log out and back in.
+After the installation finishes, log out and back in.
 
 > [!important]
 > **Do not move or delete the dotfiles repository after installation.**
@@ -108,7 +108,7 @@ After the installation finishes log out and back in.
 ---
 ## Updating
 
-Pull the latest changes, then run the updater from inside the repository:
+Pull the latest changes, then run the updater from inside this repository:
 
 ```bash
 git pull
@@ -132,7 +132,7 @@ You can check the reminders printed at the end of the run.
 
 > [!note]
 > 
-> Custom-gpu parts are specific to my hardware.
+> Custom-gpu parts are specific to AMD GPUs (that is what I said at the top).
 >
 > For issues with the wallpaper picker, you can clear the cache from the Storage page in Settings.
 
