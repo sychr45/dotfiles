@@ -2,7 +2,7 @@
 
 ## Hyprland Setup by 43pr メ
 
-A fork from https://github.com/43PR/dotfiles using an older GUI version, different keybinds, and AMD GPU support
+A fork from https://github.com/43PR/dotfiles using an older GUI version, different keybinds, AMD GPU support, a taskbar integrated into the waybar, more nerd fonts, and no media array on the waybar taking up 1/4 of the screen
 
 do NOT use this repo currently, may be worked on soon
 
@@ -11,8 +11,6 @@ do NOT use this repo currently, may be worked on soon
 </div>
 
 **v1.1.0**
-
-https://github.com/user-attachments/assets/d28c7791-3f7a-42ee-85d3-8bb91c9796c6
 
 Wallpapers: https://wallhaven.cc/user/43pr
 
@@ -39,7 +37,7 @@ Just made some tweaks to it. Give it some love: [hyprquickpaper](https://github.
 
 > **You can modify keybinds using HyprMod**
 
-> **Move and resize windows with Super + left/right mouse drag.**
+> **Move and resize windows with Super + left/right/mouse drag.**
 
 | Keybind                 | Action                    |
 | -----------             | ------------------------- |
