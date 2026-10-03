@@ -46,6 +46,7 @@ networkmanager
 network-manager-applet
 bluez
 bluez-utils
+blueman
 
 # --------------------------------------------------
 # Audio
@@ -105,7 +106,7 @@ nwg-look
 # Media
 # --------------------------------------------------
 
-mpv
+vlc
 
 # --------------------------------------------------
 # System Monitoring / Hardware
@@ -139,6 +140,8 @@ cmatrix
 ttf-jetbrains-mono-nerd
 ttf-iosevka-nerd
 ttf-roboto-mono
+ttf-noto-fonts
+ttf-noto-fonts-cjk
 
 # --------------------------------------------------
 # Scripting / Package / Application Utilities
