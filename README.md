@@ -2,14 +2,9 @@
 
 ## Hyprland Setup by 43pr メ
 
-A clean and simple Hyprland setup focused on practical workflows, productivity, and easy to customize.
+A fork from https://github.com/43PR/dotfiles using an older GUI version, different keybinds, and AMD GPU support
 
-![Hyprland](https://img.shields.io/badge/Hyprland-0.56.2-8b9aaf?style=for-the-badge&labelColor=101418)
-![GitHub last commit](https://img.shields.io/github/last-commit/43PR/dotfiles?style=for-the-badge&labelColor=101418&color=8b9aaf)
-![GitHub repo size](https://img.shields.io/github/repo-size/43PR/dotfiles?style=for-the-badge&labelColor=101418&color=8b9aaf)
-[![Discord](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2FHQwU9SzHj%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&style=for-the-badge&logo=discord&logoColor=ffffff&label=discord&labelColor=101418&color=7289a8)](https://discord.gg/HQwU9SzHj)
-[![YouTube](https://img.shields.io/badge/youtube-subscribe-b05a63?style=for-the-badge&logo=youtube&logoColor=ffffff&labelColor=101418)](https://www.youtube.com/@43PR2)
-[![Ko-Fi donate](https://img.shields.io/badge/donate-kofi?style=for-the-badge&logo=ko-fi&logoColor=ffffff&label=ko-fi&labelColor=101418&color=9a6570)](https://ko-fi.com/43pr)
+do NOT use this repo currently, may be worked on soon
 
 ### **[Features](#features)  -  [Keybinds](#most-used-keybinds)  -  [Installation](#installation) -  [Updating](#updating)**
 
@@ -33,8 +28,7 @@ Wallpapers: https://wallhaven.cc/user/43pr
 - **Customizable Power Menu** —  Custom power menu. 
 - **Hyprlock** — Custom lock screen.
 - **Custom Scripts** — Scripts for workflow and system management.
-- **Spotify + Spicetify** — Custom theme based on **text - darkthemer**, (modified).
-
+- 
 > All programs: [packages.txt](packages.txt)
 
 ### Wallpaper Selector
@@ -68,7 +62,7 @@ Just made some tweaks to it. Give it some love: [hyprquickpaper](https://github.
 | `Super + Mouse wheel`   | Zoom in/out               |
 | `Delete`                | Screenshot fullscreen     |
 | `SHIFT + Delete`        | Screenshot area select    |
-| `Super + L`             | Toggle dark/light mode    |
+| `Super + L`             | Screen lock               |
 
 > To close most quickshell apps just click outside or Esc key.
 
