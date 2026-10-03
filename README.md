@@ -10,7 +10,7 @@ do NOT use this repo currently, may be worked on soon
 
 </div>
 
-**V1.0ß**
+**V1.0 ß**
 
 Wallpapers: https://wallhaven.cc/user/43pr
 
