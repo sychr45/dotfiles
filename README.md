@@ -26,7 +26,7 @@ Wallpapers: https://wallhaven.cc/user/43pr
 - **Customizable Power Menu** —  Custom power menu. 
 - **Hyprlock** — Custom lock screen.
 - **Custom Scripts** — Scripts for workflow and system management.
-- 
+
 > All programs: [packages.txt](packages.txt)
 
 ### Wallpaper Selector
@@ -50,6 +50,7 @@ Just made some tweaks to it. Give it some love: [hyprquickpaper](https://github.
 | `Super + F`             | Toggle fullscreen         |
 | `Super + Space`         | Toggle floating window    |
 | `Super + B`             | Browser                   |
+| `Super + Shift + B`     | Bluetooth                 |
 | `Super + W`             | Wallpaper selector        |
 | `Super + I`             | Settings menu             |
 | `Super + O`             | Switch opacity            |
@@ -73,7 +74,7 @@ Just made some tweaks to it. Give it some love: [hyprquickpaper](https://github.
 
 **READ ALL**
 
-Should work for Arch, Manjaro, EndeavourOS, CachyOS, etc. 
+Should work for Arch, Manjaro, EndeavourOS, CachyOS, etc. (going to try ts on nyarch)
 
 This is mainly intended for a clean installation (existing configuration files that are being replaced will be backed up automatically).
 
