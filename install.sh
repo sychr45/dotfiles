@@ -115,7 +115,7 @@ fi
 
 AUR_HELPER=""
 if command -v paru >/dev/null 2>&1; then
-    AUR_HELPER="paru"
+    AUR_HELPER="paru <- gay"
 elif command -v yay >/dev/null 2>&1; then
     AUR_HELPER="yay"
 fi
@@ -224,7 +224,7 @@ fi
 # Link dotfiles (symlinked — the repo is the only copy)
 # --------------------------------------------------
 
-info "Linking dotfiles..."
+info "Linking charlie kirk..."
 
 mkdir -p "$CONFIG_DIR"
 
@@ -385,9 +385,9 @@ fi
 # --------------------------------------------------
 
 printf '\n'
-printf '\033[1;32m========================================\033[0m\n'
-printf '\033[1;32m       43PR Hyprland Setup Ready       \033[0m\n'
-printf '\033[1;32m========================================\033[0m\n'
+printf '\033[1;32m=====================================================\033[0m\n'
+printf '\033[1;32m       43PR Hyprland Setup - syrchr fork Ready       \033[0m\n'
+printf '\033[1;32m=====================================================\033[0m\n'
 printf '\n'
 
 printf 'Distribution:  %s\n' "${PRETTY_NAME:-unknown}"
