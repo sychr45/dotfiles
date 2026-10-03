@@ -35,7 +35,7 @@ Just made some tweaks to it. Give it some love: [hyprquickpaper](https://github.
 
 ## Most used keybinds
 
-> **You can modify keybinds using HyprMod**
+> **You can modify keybinds using nano in ~/.config/hypr/keybinds.lua**
 
 > **Move and resize windows with Super + left/right/mouse drag.**
 
@@ -59,7 +59,7 @@ Just made some tweaks to it. Give it some love: [hyprquickpaper](https://github.
 | `Super + Tab`           | Lock screen               |
 | `Super + Grave`         | Logout menu               |
 | `Super + Mouse wheel`   | Zoom in/out               |
-| `Delete`                | Screenshot fullscreen     | <- saves to ~/Pictures/ usually (might find out a way for it to copy and paste rather than save each time)
+| `Delete`                | Screenshot fullscreen     |
 | `SHIFT + Delete`        | Screenshot area select    |
 | `Super + L`             | Screen lock               |
 
@@ -136,5 +136,7 @@ You can check the reminders printed at the end of the run.
 > Custom-gpu parts are specific to AMD GPUs (that is what I said at the top).
 >
 > For issues with the wallpaper picker, you can clear the cache from the Storage page in Settings.
-
-
+>
+> Screenshot saves to ~/Pictures/ usually (might find out a way for it to copy and paste rather than save each time)
+>
+> I have confirmed that this setup can work with DW proton for arknights endfield on linux if anyone here does that
