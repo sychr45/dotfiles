@@ -4,7 +4,7 @@
 
 A fork from https://github.com/43PR/dotfiles using an older GUI version, different keybinds, AMD GPU support, a taskbar integrated into the waybar, more nerd fonts, and no media array on the waybar taking up 1/4 of the screen, and some other stuff probably
 
-do NOT use this repo currently, may be worked on soon
+do **NOT** use this repo currently, may be worked on soon
 
 ### **[Features](#features)  -  [Keybinds](#most-used-keybinds)  -  [Installation](#installation) -  [Updating](#updating)**
 
