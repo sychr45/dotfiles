@@ -74,6 +74,7 @@ zsh-autosuggestions
 zsh-syntax-highlighting
 starship
 eza
+nano
 
 # --------------------------------------------------
 # File Manager / File Utilities
