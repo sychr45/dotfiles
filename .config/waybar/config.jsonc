@@ -4,59 +4,42 @@
     "exclusive": true, // "false" 
     "spacing": 0,
 
-    "modules-left": ["cpu", "custom/gpu", "memory", "hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["custom/mpris-marquee", "pulseaudio", "network", "custom/power"],
+    "modules-left": ["cpu", "custom/gpu", "memory", "temperature", "custom/gpuwatt"],
+    "modules-center": ["custom/steam", "custom/discord", "clock", "custom/firefox", "custom/gimp"],
+    "modules-right": ["pulseaudio", "network", "battery", "custom/power"],
 
     "cpu": {
         "interval": 1,
-        "format": "CPU {usage}%"
+        "format": "  CPU {usage}%"
     },
 
     "memory": {
         "interval": 1,
-        "format": "RAM {percentage}%",
-        "tooltip-format": "{used} / {total}GiB"
+        "format": "  RAM {percentage}%",
+        "tooltip-format": "{used} / {total}GiB",
     },
 
     "custom/gpu": {
         "exec": "~/.config/waybar/scripts/gpu_usage.sh",
-        "format": "GPU {}%",
+	"format": "󰢮  GPU {}%",
         "interval": 1,
-        "tooltip": true,
-        "tooltip-format": "Skylake-H GT2: {}%"
+        "tooltip": false
     },
     
-    // "temperature": {
-    //     "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
-    //     "critical-threshold": 80,
-    //     "interval": 1,
-    //     "format": " {temperatureC}°C",
-    //     "format-critical": " {temperatureC}°C",
-    //     "tooltip": true,
-    //     "tooltip-format": "CPU Temp: {temperatureC}°C",
-    //     "on-click": "~/.config/waybar/scripts/toggle-gammastep"
-    // },
-
-    "hyprland/workspaces": {
-        "active-only": false,
-        "all-outputs": true,
-
-        "format": "{icon}",
-
-        "format-icons": {
-            "urgent": "",
-            "active": "",
-            "default": ""
-        },
-        "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e+1\"})'",
-        "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({workspace=\"e-1\"})'"
-
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
+        "critical-threshold": 80,
+        "interval": 1,
+        "format": "  {temperatureC}°C",
+        "format-critical": "  {temperatureC}°C",
+        "tooltip": false,
+        "on-click": "~/.config/waybar/scripts/toggle-gammastep"
     },
-//  "format": "{:%H:%M}",
+//  "format": "{:%H:%M:%S}",
     "clock": {
-        "format": "{:%H:%M}",
-        "tooltip-format": "<tt>{calendar}</tt>",
+	"interval": 1,
+        "format": "{:%H:%M:%S}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "month",
             "format": {
@@ -65,37 +48,77 @@
         }
     },
 
-    "custom/mpris-marquee": {
-        "exec": "~/.config/waybar/scripts/mpris-marquee.sh",
-        "return-type": "json",
-        "format": "{}",
-        "on-click": "playerctl --player=\"$(~/.config/waybar/scripts/playerctl-active.sh)\" play-pause",
-        "on-click-right": "playerctl --player=\"$(~/.config/waybar/scripts/playerctl-active.sh)\" next",
-        "on-click-middle": "playerctl --player=\"$(~/.config/waybar/scripts/playerctl-active.sh)\" previous"
-    },
-
     "pulseaudio": {
+	"interval": 0.25,
         "format": "{icon}  {volume}%",
         "format-muted": "Muted",
         "format-icons": {
             "default": ["", "", ""]
-        },
+	},
         "tooltip": false,
-        "on-click": "qs ipc call settings sound",
-        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-    },
-
-    "network": {
-        "format-wifi": "",
-        "format-ethernet": "",
-        "format-disconnected": "󰖪",
-        "tooltip-format": "{ifname}\n{essid}\nSignal: {signalStrength}%",
-        "on-click": "qs ipc call settings network"
+        "on-click": "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+	"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"
     },
 
     "custom/power": {
         "format": "⏻",
         "tooltip": false,
-        "on-click": "qs ipc call powermenu toggle"
-    }
+        "on-click": "pgrep -x wlogout >/dev/null || wlogout -b 1 -c 20 -r 20 -L 1700 -R 1700 -T 325 -B 325"
+    },
+
+    "battery": {
+	"bat": "BAT0",
+	"interval": 2,
+	"states": {
+	    "warning": 30,
+	    "critical": 15
+	},
+	"format": "{capacity}% {icon}",
+	"format-charging": "{capacity}% 󱐌",
+	"format-not-charging": "",
+	"format-plugged": "",
+	"format-icons": ["", "", "", "", ""],
+	"format-warning": "{capacity}% ",
+	"format-critical": "{capacity}% "
+    },
+
+    "network": {
+	"interval": 1,
+	"tooltip": false,
+	"format-wifi": "{essid}    {bandwidthDownBytes}  {bandwidthUpBytes}",
+	"format-ethernet": "{ifname}    {bandwidthDownBytes}  {bandwidthUpBytes}"
+    },
+
+    "custom/firefox": {
+	"format": "󰈹",
+	"tooltip": false,
+	"on-click": "firefox"
+    },
+
+    "custom/discord": {
+	"format": "",
+	"tooltip": false,
+	"on-click": "vesktop"
+    },
+
+    "custom/gpuwatt": {
+	"exec": "~/.config/waybar/nvidia_power.sh",
+	"interval": 1,
+	"format": " {}W",
+	"tooltip": false
+    },
+
+    "custom/steam": {
+	"format": "",
+	"tooltip": false,
+	"on-click": "steam"
+    },
+
+    "custom/gimp": {
+	"format": "",
+	"tooltip": false,
+	"on-click": "gimp"
+   },
 }
