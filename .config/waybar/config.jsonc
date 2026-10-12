@@ -5,7 +5,7 @@
     "spacing": 0,
 
     "modules-left": ["cpu", "custom/gpu", "memory", "temperature", "custom/gpuwatt"],
-    "modules-center": ["custom/steam", "custom/discord", "clock", "custom/firefox", "custom/gimp"],
+    "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network", "battery", "custom/power"],
 
     "cpu": {
@@ -75,6 +75,7 @@
 	    "warning": 30,
 	    "critical": 15
 	},
+
 	"format": "{capacity}% {icon}",
 	"format-charging": "{capacity}% 󱐌",
 	"format-not-charging": "",
@@ -91,34 +92,10 @@
 	"format-ethernet": "{ifname}    {bandwidthDownBytes}  {bandwidthUpBytes}"
     },
 
-    "custom/firefox": {
-	"format": "󰈹",
-	"tooltip": false,
-	"on-click": "firefox"
-    },
-
-    "custom/discord": {
-	"format": "",
-	"tooltip": false,
-	"on-click": "vesktop"
-    },
-
-    "custom/gpuwatt": {
+"custom/gpuwatt": {
 	"exec": "~/.config/waybar/nvidia_power.sh",
 	"interval": 1,
 	"format": " {}W",
 	"tooltip": false
     },
-
-    "custom/steam": {
-	"format": "",
-	"tooltip": false,
-	"on-click": "steam"
-    },
-
-    "custom/gimp": {
-	"format": "",
-	"tooltip": false,
-	"on-click": "gimp"
-   },
 }
