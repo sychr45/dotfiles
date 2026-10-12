@@ -47,6 +47,7 @@ network-manager-applet
 bluez
 bluez-utils
 blueman
+firewalld
 
 # --------------------------------------------------
 # Audio
@@ -70,7 +71,6 @@ wl-clipboard
 
 kitty
 zsh
-zsh-autosuggestions
 zsh-syntax-highlighting
 starship
 eza
@@ -153,9 +153,4 @@ jq
 flatpak
 curl
 unzip
-
-# --------------------------------------------------
-# Hyprland Companion Apps (AUR)
-# --------------------------------------------------
-
-hyprmod
+nano
