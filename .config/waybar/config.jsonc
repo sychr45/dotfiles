@@ -1,0 +1,117 @@
+{
+    "layer": "top",
+    "position": "top",
+    "exclusive": true, // "false" 
+    "spacing": 0,
+
+    "modules-left": ["cpu", "custom/gpu", "memory", "temperature", "custom/gpuwatt"],
+    "modules-center": ["custom/steam", "custom/discord", "clock", "custom/firefox", "custom/gimp"],
+    "modules-right": ["custom/whenminimised", "pulseaudio", "network", "battery", "custom/power"],
+
+    "cpu": {
+        "interval": 1,
+        "format": "  CPU {usage}%"
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": "  RAM {percentage}%",
+        "tooltip-format": "{used} / {total}GiB",
+    },
+
+    "custom/gpu": {
+        "exec": "~/.config/waybar/scripts/gpu_usage.sh",
+	"format": "󰢮  GPU {}%",
+        "interval": 1,
+        "tooltip": false
+    },
+    
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input",
+        "critical-threshold": 80,
+        "interval": 1,
+        "format": "  {temperatureC}°C",
+        "format-critical": "  {temperatureC}°C",
+        "tooltip": false,
+        "on-click": "~/.config/waybar/scripts/toggle-gammastep"
+    },
+//  "format": "{:%H:%M:%S}",
+    "clock": {
+	"interval": 1,
+        "format": "{:%H:%M:%S}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "today": "<b><u>{}</u></b>"
+            }
+        }
+    },
+
+    "pulseaudio": {
+	"interval": 0.25,
+        "format": "{icon}  {volume}%",
+        "format-muted": "Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+	},
+        "tooltip": false,
+        "on-click": "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+	"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"
+    },
+
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "pgrep -x wlogout >/dev/null || wlogout -b 1 -c 20 -r 20 -L 1700 -R 1700 -T 325 -B 325"
+    },
+
+    "battery": {
+	"bat": "BAT0",
+	"interval": 2,
+	"states": {
+	    "warning": 30,
+	    "critical": 15
+	},
+	"format": "{capacity}% {icon}",
+	"format-charging": "{capacity}% 󱐌",
+	"format-not-charging": "",
+	"format-plugged": "",
+	"format-full":  "",
+	"format-icons": ["", "", "", "", ""],
+	"format-warning": "{capacity}% ",
+	"format-critical": "{capacity}% "
+    },
+
+    "network": {
+	"interval": 1,
+	"tooltip": false,
+	"format-wifi": "{essid}    {bandwidthDownBytes}  {bandwidthUpBytes}",
+	"format-ethernet": "{ifname}    {bandwidthDownBytes}  {bandwidthUpBytes}"
+    },
+
+    "custom/gpuwatt": {
+	"exec": "~/.config/waybar/gpu_power.sh",
+	"interval": 1,
+	"return-type": "json",
+	"format": " {text}W",
+	"tooltip": false
+    },
+
+    "custom/gimp": {
+	"format": "",
+	"tooltip": false,
+	"on-click": "gimp"
+   },
+
+    "custom/whenminimised": {
+	"interval": 0.1,
+	"format": "{text}",
+	"return-type": "json",
+	"tooltip": false,
+	"exec": "~/.config/waybar/scripts/whenminimised.sh",
+	"hide-empty-text": true
+   },
+}

@@ -1,0 +1,126 @@
+/* General */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font Mono", monospace;
+    font-size: 11px;
+    min-height: 0;
+}
+
+window#waybar {
+    min-height: 10px;
+    background-color: rgba(20, 20, 20, 0);
+    color: #ffffff;
+}
+
+/* LEFT */
+.modules-left {
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 10px;
+    margin: 4px 0 2px 6px;
+}
+
+/* CENTER */
+.modules-center {
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 10px;
+    margin: 4px 0 2px;
+}
+
+/* RIGHT */
+.modules-right {
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 10px;
+    margin: 4px 6px 2px 0;
+}
+
+/* Module spacing */
+#cpu,
+#custom-gpu,
+#memory,
+#temperature,
+#custom-gpuwatt,
+#clock,
+#custom-gimp
+#pulseaudio,
+#custom-whenminimised,
+#network,
+#battery,
+#custom-power {
+    padding: 0 10px;
+    margin: 0 2px;
+    transition: font-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Power */
+#custom-power {
+    color: #ffffff;
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+/* Clock */
+#clock {
+    font-weight: bold;
+}
+
+/* Temperature */
+#temperature.critical {
+    color: #ff5555;
+}
+
+
+/* Tooltip */
+tooltip {
+    background-color: rgba(20, 20, 20, 0.4);
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Interactive hover effect */
+
+#cpu:hover,
+#memory:hover,
+#custom-gpu:hover,
+#temperature:hover,
+#custom-gpuwatt:hover,
+#clock:hover,
+#custom-gimp:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-power:hover {
+    font-size: 13px;
+}
+
+/* Mimimization */
+
+#custom-whenminimised {
+    opacity: 0;
+}
+
+#custom-whenminimised.show {
+    opacity: 1;
+    transition: none;
+}
+
+#custom-whenminimised.fade {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#custom-whenminimised.hidden {
+    opacity: 0;
+}
+
+/* Extras */
+
+#custom-gpuwatt.hidden {
+    display: none;
+}

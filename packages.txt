@@ -1,0 +1,100 @@
+# 43PR/dotfiles
+# Arch Linux packages required for the Hyprland setup
+#
+# Note: some of these (currently: wlogout) live only in the AUR,
+# not in the official repos. install.sh detects this automatically
+# and installs them with paru/yay if one is available.
+
+# --------------------------------------------------
+# Hyprland / desktop
+# --------------------------------------------------
+
+hyprland
+waybar
+rofi
+hyprlock
+wlogout
+quickshell
+jq
+xdg-desktop-portal-hyprland
+xorg-xwayland
+
+# --------------------------------------------------
+# Wallpaper / screenshots
+# --------------------------------------------------
+
+awww
+grim
+slurp
+imagemagick
+
+# --------------------------------------------------
+# Clipboard
+# --------------------------------------------------
+
+cliphist
+wl-clipboard
+
+# --------------------------------------------------
+# Audio
+# --------------------------------------------------
+
+pipewire
+pipewire-pulse
+wireplumber
+blueman
+
+# --------------------------------------------------
+# Terminal / applications
+# --------------------------------------------------
+
+kitty
+thunar
+xed
+protonplus
+gimp
+
+# --------------------------------------------------
+# File manager / thumbnails / icons / GTK
+# --------------------------------------------------
+
+tumbler
+ffmpegthumbnailer
+papirus-icon-theme
+papirus-folders
+nwg-look
+
+# --------------------------------------------------
+# Media
+# --------------------------------------------------
+
+vlc
+
+# --------------------------------------------------
+# Fonts
+# --------------------------------------------------
+
+ttf-jetbrains-mono-nerd
+ttf-font-awesome
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+
+# --------------------------------------------------
+# Utilities
+# --------------------------------------------------
+
+curl
+unzip
+gammastep
+brightnessctl
+nvtop
+btop
+cava
+fastfetch
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+starship
+eza
+
