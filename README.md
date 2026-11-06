@@ -30,7 +30,7 @@ As reference for this, I tried it on a Lenovo X240 with 8GB of DDR3L, and althou
 - **Focusrite device support** — Built in support for focusrite scarlett devices in packages
 
 > If you don't require the focusrite package, then just run sudo pacman -R alsa-scarlett-gui-git
-
+>
 > All programs: [packages.txt](packages.txt)
 
 ## Keybinds
