@@ -22,11 +22,12 @@ As reference for this, I tried it on a Lenovo X240 with 8GB of DDR3L, and althou
 ## Features
 
 - **Quickshell** — Fast, lightweight, customizable desktop components.
-- **Waybar** - Minimal-distraction, customisable-by-terminal, interface for hardware monitoring or app shortcuts
+- **Waybar** - Minimal-distraction, customisable-by-terminal, interface for hardware monitoring or app shortcuts.
 - **Wallpaper picker** — Customizable | Wallpaper-based color generation, and live wallpapers.
 - **App Launcher** — **Rofi** App search, clipboard history, and opacity controls.
 - **Zsh + Starship** — Enhanced shell with autosuggestions and command history.
-- **Power Menu** — Shutdown, reboot, logout
+- **Power Menu** — Shutdown, reboot, logout.
+- **Focusrite device support** — Built in support for focusrite scarlett devices in packages
 
 > All programs: [packages.txt](packages.txt)
 
@@ -51,7 +52,7 @@ Hover over elements to see actions.
 | `Super + Grave`         | Logout menu               |
 | `Super + L`             | Lock screen               |
 | `Super + M`             | Minimise a window         |
-| `Super + Shift + S`      | Steam                    |
+| `Super + Shift + S`     | Steam                     |
 
 > [!note]
 >
