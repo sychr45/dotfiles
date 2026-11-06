@@ -1,8 +1,8 @@
 <div align="center">
-**v0.2α working**
-
 
 <p align="center">
+
+**v0.2α working**
 
 ### Requirements
 
