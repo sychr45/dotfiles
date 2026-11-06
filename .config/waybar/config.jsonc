@@ -5,7 +5,7 @@
     "spacing": 0,
 
     "modules-left": ["cpu", "custom/gpu", "memory", "temperature", "custom/gpuwatt"],
-    "modules-center": ["custom/steam", "custom/discord", "clock", "custom/firefox", "custom/gimp"],
+    "modules-center": ["clock", "custom/gimp"],
     "modules-right": ["custom/whenminimised", "pulseaudio", "network", "battery", "custom/power"],
 
     "cpu": {
