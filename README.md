@@ -51,6 +51,7 @@ Hover over elements to see actions.
 | `Super + Grave`         | Logout menu               |
 | `Super + L`             | Lock screen               |
 | `Super + M`             | Minimise a window         |
+| `Super + Shift + S`      | Steam                    |
 
 > [!note]
 >
@@ -59,6 +60,8 @@ Hover over elements to see actions.
 > To close components use Esc key or use the same keybind. 
 >
 > All keybinds: [.config/hypr/keybinds.lua](.config/hypr/keybinds.lua)
+>
+> Super + Shift + S needs to be uncommented to work and needs steam installed obvs
 
 ---
 ## Installation 
