@@ -10,7 +10,7 @@ local menu = "rofi -show drun"
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + D", hl.dsp.exec_cmd("pgrep -x rofi >/dev/null && pkill -x rofi || " .. menu))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("steam"))
+-- hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("steam"))
 hl.bind("SUPER + B", hl.dsp.exec_cmd("firefox"))
 hl.bind("CTRL + Space", hl.dsp.exec_cmd("hyprctl switchxkblayout all next"))
 
