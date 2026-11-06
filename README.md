@@ -49,7 +49,8 @@ Hover over elements to see actions.
 | `Super + W`             | Wallpaper selector        |
 | `Super + Mouse wheel`   | Zoom in/out               |
 | `Super + Grave`         | Logout menu               |
-| `Super + L  `           | Lock screen               |
+| `Super + L`             | Lock screen               |
+| `Super + M`             | Minimise a window         |
 
 > [!note]
 >
@@ -68,10 +69,11 @@ Works for Arch, CachyOS, EndeavourOS, Manjaro, etc. (testing for Nyarch soon)
 
 This is mainly intended for a clean installation (existing configuration files that are being replaced will be backed up automatically).
 
-**First install git then use the next command and continue the installation until it's finished**
+**First install git and a package installer (paru or yay) then use the next command and continue the installation until it's finished**
 
 ```bash
-sudo pacman -S git base-devel   
+sudo pacman -S git base-devel
+git clone https://aur.archlinux.org/yay.git   
 ```
 
 ```bash
