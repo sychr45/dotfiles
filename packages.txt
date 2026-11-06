@@ -43,6 +43,7 @@ pipewire
 pipewire-pulse
 wireplumber
 blueman
+alsa-scarlett-gui
 
 # --------------------------------------------------
 # Terminal / applications
